@@ -16,8 +16,8 @@
 		C4ADA9D420C92F3400ED0BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4ADA9D220C92F3400ED0BFB /* LaunchScreen.storyboard */; };
 		C4ADA9DF20C92F3400ED0BFB /* MyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADA9DE20C92F3400ED0BFB /* MyTaskTests.swift */; };
 		C4ADA9EA20C92F3400ED0BFB /* MyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADA9E920C92F3400ED0BFB /* MyTaskUITests.swift */; };
-		C4ADA9F920C933B000ED0BFB /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADA9F720C933B000ED0BFB /* CustomCell.swift */; };
-		C4ADA9FA20C933B000ED0BFB /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4ADA9F820C933B000ED0BFB /* CustomCell.xib */; };
+		C4ADA9F920C933B000ED0BFB /* AdvertisementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADA9F720C933B000ED0BFB /* AdvertisementCell.swift */; };
+		C4ADA9FA20C933B000ED0BFB /* AdvertisementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4ADA9F820C933B000ED0BFB /* AdvertisementCell.xib */; };
 		C4ADA9FD20C97AA000ED0BFB /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADA9FB20C97AA000ED0BFB /* MenuCell.swift */; };
 		C4ADA9FE20C97AA000ED0BFB /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4ADA9FC20C97AA000ED0BFB /* MenuCell.xib */; };
 		C4ADAA0120C97F7D00ED0BFB /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADA9FF20C97F7D00ED0BFB /* TitleCell.swift */; };
@@ -60,8 +60,8 @@
 		C4ADA9E520C92F3400ED0BFB /* MyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4ADA9E920C92F3400ED0BFB /* MyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaskUITests.swift; sourceTree = "<group>"; };
 		C4ADA9EB20C92F3400ED0BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4ADA9F720C933B000ED0BFB /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		C4ADA9F820C933B000ED0BFB /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		C4ADA9F720C933B000ED0BFB /* AdvertisementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementCell.swift; sourceTree = "<group>"; };
+		C4ADA9F820C933B000ED0BFB /* AdvertisementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertisementCell.xib; sourceTree = "<group>"; };
 		C4ADA9FB20C97AA000ED0BFB /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C4ADA9FC20C97AA000ED0BFB /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		C4ADA9FF20C97F7D00ED0BFB /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
@@ -142,8 +142,8 @@
 				C4ADA9C920C92F3400ED0BFB /* AppDelegate.swift */,
 				C4ADA9CB20C92F3400ED0BFB /* ViewController.swift */,
 				C4ADA9CD20C92F3400ED0BFB /* Main.storyboard */,
-				C4ADA9F720C933B000ED0BFB /* CustomCell.swift */,
-				C4ADA9F820C933B000ED0BFB /* CustomCell.xib */,
+				C4ADA9F720C933B000ED0BFB /* AdvertisementCell.swift */,
+				C4ADA9F820C933B000ED0BFB /* AdvertisementCell.xib */,
 				C4ADA9FB20C97AA000ED0BFB /* MenuCell.swift */,
 				C4ADA9FC20C97AA000ED0BFB /* MenuCell.xib */,
 				C4ADA9FF20C97F7D00ED0BFB /* TitleCell.swift */,
@@ -303,7 +303,7 @@
 				C4ADA9D120C92F3400ED0BFB /* Assets.xcassets in Resources */,
 				C4ADAA0220C97F7D00ED0BFB /* TitleCell.xib in Resources */,
 				C4ADA9FE20C97AA000ED0BFB /* MenuCell.xib in Resources */,
-				C4ADA9FA20C933B000ED0BFB /* CustomCell.xib in Resources */,
+				C4ADA9FA20C933B000ED0BFB /* AdvertisementCell.xib in Resources */,
 				C4ADA9CF20C92F3400ED0BFB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4ADA9CC20C92F3400ED0BFB /* ViewController.swift in Sources */,
-				C4ADA9F920C933B000ED0BFB /* CustomCell.swift in Sources */,
+				C4ADA9F920C933B000ED0BFB /* AdvertisementCell.swift in Sources */,
 				C4ADAA0120C97F7D00ED0BFB /* TitleCell.swift in Sources */,
 				C4ADA9FD20C97AA000ED0BFB /* MenuCell.swift in Sources */,
 				C4ADA9CA20C92F3400ED0BFB /* AppDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  CustomCell.swift
+//  AdvertisementCell.swift
 //  MyTask
 //
 //  Created by Mery  on 6/7/18.
@@ -8,8 +8,9 @@
 
 import UIKit
 
-class CustomCell: UITableViewCell {
-
+class AdvertisementCell: UITableViewCell {
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
