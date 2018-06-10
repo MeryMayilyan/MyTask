@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCellID" rowHeight="462" id="KGk-i7-Jjw" customClass="HeaderMenuCell" customModule="MyTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="477" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="477" height="399.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7c-Ar-ied">
+                        <rect key="frame" x="0.0" y="-30" width="477" height="399.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="v1F-HE-fO1">
+                                <rect key="frame" x="0.0" y="0.0" width="477" height="299.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4wt-NC-NuG">
+                                <rect key="frame" x="0.0" y="299.5" width="477" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8I-AM-AVd">
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="100"/>
+                                        <state key="normal" title="property for rent"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yy-ge-UXw">
+                                        <rect key="frame" x="159" y="0.0" width="159" height="100"/>
+                                        <state key="normal" title="Property for sale"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2A-qY-svO">
+                                        <rect key="frame" x="318" y="0.0" width="159" height="100"/>
+                                        <state key="normal" title="Cars for sale "/>
+                                        <connections>
+                                            <action selector="carsForSaleButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RXK-BT-dxz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe1-5f-FDg">
+                                <rect key="frame" x="20" y="30" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="1YW-qf-pEG"/>
+                                    <constraint firstAttribute="height" constant="40" id="DRq-M2-Ylj"/>
+                                </constraints>
+                                <state key="normal" title="menu" image="menu"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayy-af-TYw" userLabel="SearchView">
+                                <rect key="frame" x="107" y="125" width="262.5" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AD2-0U-oTI">
+                                        <rect key="frame" x="6" y="0.0" width="216.5" height="50"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-qO-2wh">
+                                        <rect key="frame" x="222.5" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wPh-qO-2wh" secondAttribute="height" multiplier="1:1" id="Tff-ao-bXG"/>
+                                            <constraint firstAttribute="width" constant="20" id="zQ8-Jf-BD1"/>
+                                        </constraints>
+                                        <state key="normal" image="search"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="AD2-0U-oTI" secondAttribute="bottom" id="HA1-BF-th4"/>
+                                    <constraint firstItem="AD2-0U-oTI" firstAttribute="top" secondItem="ayy-af-TYw" secondAttribute="top" id="ORt-jV-AjD"/>
+                                    <constraint firstItem="wPh-qO-2wh" firstAttribute="leading" secondItem="AD2-0U-oTI" secondAttribute="trailing" id="QFT-pi-YbQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="wPh-qO-2wh" secondAttribute="trailing" constant="20" id="S8z-Jn-htv"/>
+                                    <constraint firstItem="AD2-0U-oTI" firstAttribute="leading" secondItem="ayy-af-TYw" secondAttribute="leading" constant="6" id="exe-Td-aHQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="rko-p1-PUN"/>
+                                    <constraint firstItem="wPh-qO-2wh" firstAttribute="centerY" secondItem="ayy-af-TYw" secondAttribute="centerY" id="v5Z-Cz-FbU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRZ-8p-HwD">
+                                <rect key="frame" x="186" y="249.5" width="104" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Advanced filter">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ayy-af-TYw" firstAttribute="centerX" secondItem="v1F-HE-fO1" secondAttribute="centerX" id="2eX-Jm-qef"/>
+                            <constraint firstItem="4wt-NC-NuG" firstAttribute="width" secondItem="c7c-Ar-ied" secondAttribute="width" id="7bj-WX-LEE"/>
+                            <constraint firstItem="ayy-af-TYw" firstAttribute="centerY" secondItem="v1F-HE-fO1" secondAttribute="centerY" id="JfY-iZ-ctX"/>
+                            <constraint firstItem="fe1-5f-FDg" firstAttribute="leading" secondItem="c7c-Ar-ied" secondAttribute="leading" constant="20" id="M72-cX-dbr"/>
+                            <constraint firstAttribute="bottom" secondItem="4wt-NC-NuG" secondAttribute="bottom" id="OLg-ct-XeU"/>
+                            <constraint firstItem="4wt-NC-NuG" firstAttribute="leading" secondItem="c7c-Ar-ied" secondAttribute="leading" id="RFE-XM-gAH"/>
+                            <constraint firstItem="v1F-HE-fO1" firstAttribute="height" secondItem="c7c-Ar-ied" secondAttribute="height" multiplier="0.75" id="YUp-Wb-S4N"/>
+                            <constraint firstItem="ayy-af-TYw" firstAttribute="width" secondItem="v1F-HE-fO1" secondAttribute="width" multiplier="0.55" id="Z4T-df-AJV"/>
+                            <constraint firstItem="fRZ-8p-HwD" firstAttribute="centerX" secondItem="c7c-Ar-ied" secondAttribute="centerX" id="cd4-DB-iof"/>
+                            <constraint firstItem="fRZ-8p-HwD" firstAttribute="bottom" secondItem="v1F-HE-fO1" secondAttribute="bottom" constant="-20" id="eq0-es-p2R"/>
+                            <constraint firstItem="fe1-5f-FDg" firstAttribute="top" secondItem="c7c-Ar-ied" secondAttribute="top" constant="30" id="gCX-et-5hn"/>
+                            <constraint firstItem="v1F-HE-fO1" firstAttribute="top" secondItem="c7c-Ar-ied" secondAttribute="top" id="gHp-rf-WZV"/>
+                            <constraint firstAttribute="trailing" secondItem="v1F-HE-fO1" secondAttribute="trailing" id="iad-9w-tFb"/>
+                            <constraint firstItem="v1F-HE-fO1" firstAttribute="width" secondItem="c7c-Ar-ied" secondAttribute="width" id="mXr-fm-973"/>
+                            <constraint firstAttribute="trailing" secondItem="4wt-NC-NuG" secondAttribute="trailing" id="nvs-P7-vHY"/>
+                            <constraint firstItem="v1F-HE-fO1" firstAttribute="leading" secondItem="c7c-Ar-ied" secondAttribute="leading" id="pgL-K0-NVF"/>
+                            <constraint firstItem="4wt-NC-NuG" firstAttribute="top" secondItem="v1F-HE-fO1" secondAttribute="bottom" id="zyd-K3-FyK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c7c-Ar-ied" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="76z-50-UM9"/>
+                    <constraint firstAttribute="bottom" secondItem="c7c-Ar-ied" secondAttribute="bottom" constant="30" id="89Q-VS-fCe"/>
+                    <constraint firstItem="c7c-Ar-ied" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OMa-LV-4QJ"/>
+                    <constraint firstItem="c7c-Ar-ied" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="sar-b4-wwv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="carsForSaleButton" destination="C2A-qY-svO" id="j2s-Un-5v7"/>
+                <outlet property="headerImageView" destination="v1F-HE-fO1" id="Zdk-22-x2X"/>
+                <outlet property="headerView" destination="c7c-Ar-ied" id="5rR-3Y-JeM"/>
+                <outlet property="propertyForRentButton" destination="Y8I-AM-AVd" id="CFq-HR-KT7"/>
+                <outlet property="propertyForSaleButton" destination="0yy-ge-UXw" id="wKx-NJ-64c"/>
+                <outlet property="searchButton" destination="wPh-qO-2wh" id="bDP-EP-cQe"/>
+                <outlet property="searchTextField" destination="AD2-0U-oTI" id="Up2-y7-rAD"/>
+                <outlet property="searchView" destination="ayy-af-TYw" id="eD6-Ik-sao"/>
+            </connections>
+            <point key="canvasLocation" x="83.5" y="155"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="city" width="524" height="350"/>
+        <image name="menu" width="1024" height="1024"/>
+        <image name="search" width="512" height="512"/>
+    </resources>
+</document>

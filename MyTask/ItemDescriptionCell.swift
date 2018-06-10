@@ -1,15 +1,16 @@
 //
-//  TitleCell.swift
+//  ItemDescriptionCell.swift
 //  MyTask
 //
-//  Created by Mery  on 6/7/18.
+//  Created by Mery  on 6/10/18.
 //  Copyright © 2018 Mery . All rights reserved.
 //
 
 import UIKit
 
-class TitleCell: UITableViewCell {
+class ItemDescriptionCell: UITableViewCell {
 
+    @IBOutlet weak var textField: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

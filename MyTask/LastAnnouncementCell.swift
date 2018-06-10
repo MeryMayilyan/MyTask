@@ -1,14 +1,14 @@
 //
-//  MenuCell.swift
+//  LastAnnouncementCell.swift
 //  MyTask
 //
-//  Created by Mery  on 6/7/18.
+//  Created by Mery  on 6/9/18.
 //  Copyright © 2018 Mery . All rights reserved.
 //
 
 import UIKit
 
-class MenuCell: UITableViewCell {
+class LastAnnouncementCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
