@@ -1,10 +1,3 @@
-//
-//  LastAnnouncementsCell.swift
-//  MyTask
-//
-//  Created by Mery Mayilyan on 11/06/2018.
-//  Copyright © 2018 Mery . All rights reserved.
-//
 
 import UIKit
 

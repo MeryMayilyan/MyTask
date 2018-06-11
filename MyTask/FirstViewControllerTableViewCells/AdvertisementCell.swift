@@ -1,10 +1,3 @@
-//
-//  AdvertisementCell.swift
-//  MyTask
-//
-//  Created by Mery  on 6/7/18.
-//  Copyright © 2018 Mery . All rights reserved.
-//
 
 import UIKit
 

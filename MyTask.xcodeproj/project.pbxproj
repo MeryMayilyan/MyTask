@@ -153,22 +153,13 @@
 		C4ADA9C820C92F3400ED0BFB /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				CCD5AAB620CEFE73006272CD /* SecondViewControllerCellsXIB */,
+				CCD5AAB520CEFE3F006272CD /* FirstViewControllerCellsXIB */,
+				CCD5AAB420CEFDED006272CD /* SecondViewControllerTableViewCells */,
+				CCD5AAB320CEFD86006272CD /* FirstViewControllerTableViewCells */,
+				CCD5AAB220CEFD55006272CD /* ViewControllers */,
 				C4ADA9C920C92F3400ED0BFB /* AppDelegate.swift */,
-				C4ADA9CB20C92F3400ED0BFB /* ViewController.swift */,
-				C48A9DCE20CBFA680061AAA6 /* ItemsForSaleViewController.swift */,
-				CCD5AAA820CEBB60006272CD /* LastAnnouncementsCell.swift */,
-				CCD5AAA920CEBB60006272CD /* LastAnnouncementsCell.xib */,
-				C48A9DDC20CC1FF30061AAA6 /* ItemInfoCell.swift */,
-				C48A9DDD20CC1FF30061AAA6 /* ItemInfoCell.xib */,
 				C4ADA9CD20C92F3400ED0BFB /* Main.storyboard */,
-				C48A9DD220CBFD840061AAA6 /* ItemHeaderCell.swift */,
-				C48A9DD320CBFD840061AAA6 /* ItemHeaderCell.xib */,
-				C48A9DD820CC11D50061AAA6 /* NameCell.swift */,
-				C48A9DD920CC11D50061AAA6 /* NameCell.xib */,
-				C4ADA9F820C933B000ED0BFB /* AdvertisementCell.xib */,
-				C4ADA9F720C933B000ED0BFB /* AdvertisementCell.swift */,
-				C48A9DCA20CA4EE80061AAA6 /* HeaderMenuCell.swift */,
-				C48A9DCB20CA4EE80061AAA6 /* HeaderMenuCell.xib */,
 				C4ADA9D020C92F3400ED0BFB /* Assets.xcassets */,
 				C4ADA9D220C92F3400ED0BFB /* LaunchScreen.storyboard */,
 				C4ADA9D520C92F3400ED0BFB /* Info.plist */,
@@ -192,6 +183,55 @@
 				C4ADA9EB20C92F3400ED0BFB /* Info.plist */,
 			);
 			path = MyTaskUITests;
+			sourceTree = "<group>";
+		};
+		CCD5AAB220CEFD55006272CD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C48A9DCE20CBFA680061AAA6 /* ItemsForSaleViewController.swift */,
+				C4ADA9CB20C92F3400ED0BFB /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CCD5AAB320CEFD86006272CD /* FirstViewControllerTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADA9F720C933B000ED0BFB /* AdvertisementCell.swift */,
+				C48A9DCA20CA4EE80061AAA6 /* HeaderMenuCell.swift */,
+				CCD5AAA820CEBB60006272CD /* LastAnnouncementsCell.swift */,
+			);
+			path = FirstViewControllerTableViewCells;
+			sourceTree = "<group>";
+		};
+		CCD5AAB420CEFDED006272CD /* SecondViewControllerTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C48A9DDC20CC1FF30061AAA6 /* ItemInfoCell.swift */,
+				C48A9DD220CBFD840061AAA6 /* ItemHeaderCell.swift */,
+				C48A9DD820CC11D50061AAA6 /* NameCell.swift */,
+			);
+			path = SecondViewControllerTableViewCells;
+			sourceTree = "<group>";
+		};
+		CCD5AAB520CEFE3F006272CD /* FirstViewControllerCellsXIB */ = {
+			isa = PBXGroup;
+			children = (
+				CCD5AAA920CEBB60006272CD /* LastAnnouncementsCell.xib */,
+				C4ADA9F820C933B000ED0BFB /* AdvertisementCell.xib */,
+				C48A9DCB20CA4EE80061AAA6 /* HeaderMenuCell.xib */,
+			);
+			path = FirstViewControllerCellsXIB;
+			sourceTree = "<group>";
+		};
+		CCD5AAB620CEFE73006272CD /* SecondViewControllerCellsXIB */ = {
+			isa = PBXGroup;
+			children = (
+				C48A9DDD20CC1FF30061AAA6 /* ItemInfoCell.xib */,
+				C48A9DD320CBFD840061AAA6 /* ItemHeaderCell.xib */,
+				C48A9DD920CC11D50061AAA6 /* NameCell.xib */,
+			);
+			path = SecondViewControllerCellsXIB;
 			sourceTree = "<group>";
 		};
 		D4774BDD3E57CA49C7054CD2 /* Frameworks */ = {
