@@ -22,7 +22,7 @@ class ItemsForRentViewController : UIViewController, UITableViewDelegate, UITabl
         tableView.register(UINib.init(nibName: "NameCell", bundle: nil), forCellReuseIdentifier: "NameCellID")
         tableView.register(UINib.init(nibName: "ItemInfoCell", bundle: nil), forCellReuseIdentifier: "ItemInfoCellID")
         tableView.register(UINib.init(nibName: "AdvertisementCell", bundle: nil), forCellReuseIdentifier: "AdvertisementCellID")
-        tableView.register(UINib.init(nibName: "ItemDescriptionCell", bundle: nil), forCellReuseIdentifier: "ItemDescriptionCellID")
+//        tableView.register(UINib.init(nibName: "ItemDescriptionCell", bundle: nil), forCellReuseIdentifier: "ItemDescriptionCellID")
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -45,9 +45,9 @@ class ItemsForRentViewController : UIViewController, UITableViewDelegate, UITabl
         else if indexPath.row == 1 {
             cell =  tableView.dequeueReusableCell(withIdentifier: "NameCellID")
         }
-        else if indexPath.row == 2 {
-            cell =  tableView.dequeueReusableCell(withIdentifier: "ItemDescriptionCellID")
-        }
+//        else if indexPath.row == 2 {
+//            cell =  tableView.dequeueReusableCell(withIdentifier: "ItemDescriptionCellID")
+//        }
         else if indexPath.row == 3 || indexPath.row == 4 || indexPath.row == 5 {
             cell = tableView.dequeueReusableCell(withIdentifier: "ItemInfoCellID")
         }

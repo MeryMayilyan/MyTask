@@ -10,8 +10,9 @@ import UIKit
 
 class ItemHeaderCell: UITableViewCell {
 
-    @IBOutlet weak var descriptionButton: UIButton!
-    @IBOutlet weak var priceButton: UIButton!
+  
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var itemHeaderView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()

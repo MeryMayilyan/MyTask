@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableView.register(UINib.init(nibName: "HeaderMenuCell", bundle: nil), forCellReuseIdentifier: "MenuCellID")
         tableView.register(UINib.init(nibName: "AdvertisementCell", bundle: nil), forCellReuseIdentifier: "AdvertisementCellID")
-        tableView.register(UINib.init(nibName: "LastAnnouncementCell", bundle: nil), forCellReuseIdentifier: "LastAnnouncementCellID")
+        tableView.register(UINib.init(nibName: "LastAnnouncementsCell", bundle: nil), forCellReuseIdentifier: "LastAnnouncementsCellID")
         
     }
     
@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return headerCell!
         }
         else if indexPath.row == 1 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "LastAnnouncementCellID")
+            cell = tableView.dequeueReusableCell(withIdentifier: "LastAnnouncementsCellID")
         }
         else {
             let adCell : AdvertisementCell!

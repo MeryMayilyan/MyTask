@@ -28,18 +28,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="477" height="299.5"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4wt-NC-NuG">
-                                <rect key="frame" x="0.0" y="299.5" width="477" height="100"/>
+                                <rect key="frame" x="0.0" y="335" width="477" height="64.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8I-AM-AVd">
-                                        <rect key="frame" x="0.0" y="0.0" width="159" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="64.5"/>
                                         <state key="normal" title="property for rent"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yy-ge-UXw">
-                                        <rect key="frame" x="159" y="0.0" width="159" height="100"/>
+                                        <rect key="frame" x="159" y="0.0" width="159" height="64.5"/>
                                         <state key="normal" title="Property for sale"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2A-qY-svO">
-                                        <rect key="frame" x="318" y="0.0" width="159" height="100"/>
+                                        <rect key="frame" x="318" y="0.0" width="159" height="64.5"/>
                                         <state key="normal" title="Cars for sale "/>
                                         <connections>
                                             <action selector="carsForSaleButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RXK-BT-dxz"/>
@@ -98,14 +98,23 @@
                                     </attributedString>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browse by categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVB-4c-xAn">
+                                <rect key="frame" x="156.5" y="314.5" width="164.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ayy-af-TYw" firstAttribute="centerX" secondItem="v1F-HE-fO1" secondAttribute="centerX" id="2eX-Jm-qef"/>
+                            <constraint firstItem="4wt-NC-NuG" firstAttribute="top" secondItem="TVB-4c-xAn" secondAttribute="bottom" id="5cO-EW-7fu"/>
                             <constraint firstItem="4wt-NC-NuG" firstAttribute="width" secondItem="c7c-Ar-ied" secondAttribute="width" id="7bj-WX-LEE"/>
                             <constraint firstItem="ayy-af-TYw" firstAttribute="centerY" secondItem="v1F-HE-fO1" secondAttribute="centerY" id="JfY-iZ-ctX"/>
                             <constraint firstItem="fe1-5f-FDg" firstAttribute="leading" secondItem="c7c-Ar-ied" secondAttribute="leading" constant="20" id="M72-cX-dbr"/>
+                            <constraint firstItem="TVB-4c-xAn" firstAttribute="centerX" secondItem="c7c-Ar-ied" secondAttribute="centerX" id="MBj-1e-hjP"/>
                             <constraint firstAttribute="bottom" secondItem="4wt-NC-NuG" secondAttribute="bottom" id="OLg-ct-XeU"/>
+                            <constraint firstItem="TVB-4c-xAn" firstAttribute="top" secondItem="v1F-HE-fO1" secondAttribute="bottom" constant="15" id="R8n-ZJ-QRF"/>
                             <constraint firstItem="4wt-NC-NuG" firstAttribute="leading" secondItem="c7c-Ar-ied" secondAttribute="leading" id="RFE-XM-gAH"/>
                             <constraint firstItem="v1F-HE-fO1" firstAttribute="height" secondItem="c7c-Ar-ied" secondAttribute="height" multiplier="0.75" id="YUp-Wb-S4N"/>
                             <constraint firstItem="ayy-af-TYw" firstAttribute="width" secondItem="v1F-HE-fO1" secondAttribute="width" multiplier="0.55" id="Z4T-df-AJV"/>
@@ -117,7 +126,6 @@
                             <constraint firstItem="v1F-HE-fO1" firstAttribute="width" secondItem="c7c-Ar-ied" secondAttribute="width" id="mXr-fm-973"/>
                             <constraint firstAttribute="trailing" secondItem="4wt-NC-NuG" secondAttribute="trailing" id="nvs-P7-vHY"/>
                             <constraint firstItem="v1F-HE-fO1" firstAttribute="leading" secondItem="c7c-Ar-ied" secondAttribute="leading" id="pgL-K0-NVF"/>
-                            <constraint firstItem="4wt-NC-NuG" firstAttribute="top" secondItem="v1F-HE-fO1" secondAttribute="bottom" id="zyd-K3-FyK"/>
                         </constraints>
                     </view>
                 </subviews>

@@ -11,9 +11,10 @@ import UIKit
 class NameCell: UITableViewCell {
 
     @IBOutlet weak var personImageView: UIImageView!
-    @IBOutlet weak var callButtonTopConstraint: NSLayoutConstraint!
-    @IBOutlet weak var nameLabelTopConstraint: NSLayoutConstraint!
-    @IBOutlet weak var callButton: UIButton!
+    
+    @IBOutlet weak var callView: UIView!
+  
+    @IBOutlet weak var callButtonAndIconView: UIView!
     @IBOutlet weak var announcementLabel: UILabel!
     @IBOutlet weak var nameAndCallView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -22,8 +23,14 @@ class NameCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
        
-        nameLabelTopConstraint.constant = personImageView.layer.frame.size.height / 3 - nameLabel.layer.frame.size.height / 2
-        callButtonTopConstraint.constant = nameLabelTopConstraint.constant + announcementLabelTopConstraint.constant / 2
+        let color  = UIColor.init(red: 25/255, green: 204/255, blue: 166/255, alpha: 1)
+        callView.backgroundColor = color
+
+        callView.layer.cornerRadius = 0.5 * callView.bounds.size.height
+        callView.layer.masksToBounds = true
+        callButtonAndIconView.backgroundColor = color
+
+
     }
 
     

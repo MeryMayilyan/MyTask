@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,17 +36,55 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZB-QJ-YMZ">
-                                <rect key="frame" x="312" y="15" width="30" height="30"/>
-                                <state key="normal" title="call"/>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FyC-t4-9zW">
+                                <rect key="frame" x="254" y="23" width="88" height="32"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbx-RI-U5r">
+                                        <rect key="frame" x="11.5" y="8" width="66" height="16"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="7Km-eD-V6R">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7Km-eD-V6R" secondAttribute="height" multiplier="1:1" id="VPu-Hp-A3E"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP8-OE-X0i">
+                                                <rect key="frame" x="16" y="0.0" width="50" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="NP8-OE-X0i" firstAttribute="top" secondItem="Nbx-RI-U5r" secondAttribute="top" id="2Hi-cS-xX0"/>
+                                            <constraint firstAttribute="bottom" secondItem="NP8-OE-X0i" secondAttribute="bottom" id="AqZ-yr-rxl"/>
+                                            <constraint firstItem="7Km-eD-V6R" firstAttribute="leading" secondItem="Nbx-RI-U5r" secondAttribute="leading" id="AvW-86-CMf"/>
+                                            <constraint firstItem="7Km-eD-V6R" firstAttribute="height" secondItem="Nbx-RI-U5r" secondAttribute="height" id="BRX-wj-Qva"/>
+                                            <constraint firstItem="7Km-eD-V6R" firstAttribute="centerY" secondItem="Nbx-RI-U5r" secondAttribute="centerY" id="TYj-dn-f2X"/>
+                                            <constraint firstAttribute="trailing" secondItem="NP8-OE-X0i" secondAttribute="trailing" id="a0r-Sq-e1N"/>
+                                            <constraint firstItem="NP8-OE-X0i" firstAttribute="height" secondItem="Nbx-RI-U5r" secondAttribute="height" id="mqZ-Bb-USr"/>
+                                            <constraint firstItem="NP8-OE-X0i" firstAttribute="leading" secondItem="7Km-eD-V6R" secondAttribute="trailing" id="rnm-5q-5Y9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nbx-RI-U5r" firstAttribute="centerY" secondItem="FyC-t4-9zW" secondAttribute="centerY" id="1di-n8-XfJ"/>
+                                    <constraint firstItem="Nbx-RI-U5r" firstAttribute="width" secondItem="FyC-t4-9zW" secondAttribute="width" multiplier="0.75" id="8LR-IJ-7Ug"/>
+                                    <constraint firstItem="Nbx-RI-U5r" firstAttribute="height" secondItem="FyC-t4-9zW" secondAttribute="height" multiplier="0.5" id="pTp-yC-aG1"/>
+                                    <constraint firstItem="Nbx-RI-U5r" firstAttribute="centerX" secondItem="FyC-t4-9zW" secondAttribute="centerX" id="qCQ-AB-IRi"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hZB-QJ-YMZ" secondAttribute="trailing" constant="10" id="MOO-z7-St2"/>
-                            <constraint firstItem="hZB-QJ-YMZ" firstAttribute="top" secondItem="5Ce-si-kua" secondAttribute="top" constant="15" id="XQ5-3x-KiE"/>
+                            <constraint firstItem="FyC-t4-9zW" firstAttribute="width" secondItem="5Ce-si-kua" secondAttribute="width" multiplier="0.25" id="0Ny-qh-wmT"/>
+                            <constraint firstItem="FyC-t4-9zW" firstAttribute="height" secondItem="5Ce-si-kua" secondAttribute="height" multiplier="0.4" id="H7h-2l-SuC"/>
+                            <constraint firstItem="FyC-t4-9zW" firstAttribute="centerY" secondItem="5Ce-si-kua" secondAttribute="centerY" id="IOj-bU-iKQ"/>
                             <constraint firstItem="uUK-j5-lob" firstAttribute="leading" secondItem="Wh1-IE-tdl" secondAttribute="leading" id="YDv-Zb-0H4"/>
-                            <constraint firstItem="Wh1-IE-tdl" firstAttribute="top" secondItem="5Ce-si-kua" secondAttribute="top" constant="10" id="kSB-m0-dDx"/>
+                            <constraint firstItem="Wh1-IE-tdl" firstAttribute="top" secondItem="5Ce-si-kua" secondAttribute="top" constant="10" id="hjw-Ft-tsO"/>
+                            <constraint firstAttribute="trailing" secondItem="FyC-t4-9zW" secondAttribute="trailing" constant="10" id="pUX-hD-Pit"/>
                             <constraint firstItem="uUK-j5-lob" firstAttribute="top" secondItem="Wh1-IE-tdl" secondAttribute="bottom" constant="8" id="rnd-EV-J2x"/>
                         </constraints>
                     </view>
@@ -72,14 +111,15 @@
             <connections>
                 <outlet property="announcementLabel" destination="uUK-j5-lob" id="hhv-zJ-3m9"/>
                 <outlet property="announcementLabelTopConstraint" destination="rnd-EV-J2x" id="B3f-Vv-6gb"/>
-                <outlet property="callButton" destination="hZB-QJ-YMZ" id="X9a-50-bjm"/>
-                <outlet property="callButtonTopConstraint" destination="XQ5-3x-KiE" id="cSm-bW-OrG"/>
+                <outlet property="callButtonAndIconView" destination="Nbx-RI-U5r" id="qeH-Bd-HcA"/>
+                <outlet property="callView" destination="FyC-t4-9zW" id="UwD-4a-bMR"/>
                 <outlet property="nameAndCallView" destination="5Ce-si-kua" id="FPX-l8-swi"/>
-                <outlet property="nameLabel" destination="Wh1-IE-tdl" id="0g2-WI-NLM"/>
-                <outlet property="nameLabelTopConstraint" destination="kSB-m0-dDx" id="bxV-AM-ssg"/>
                 <outlet property="personImageView" destination="2bc-Fs-rAP" id="02e-yM-FK8"/>
             </connections>
-            <point key="canvasLocation" x="69" y="147"/>
+            <point key="canvasLocation" x="45" y="157"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="phone" width="512" height="512"/>
+    </resources>
 </document>
